@@ -1,11 +1,85 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Keyserman Press</title>
+    <meta
+      name="description"
+      content="Keyserman Press — books, poetry, readings, and bilingual literary projects by Noel Keyserman."
+    />
+  </head>
+
+  <body>
+    <main>
+      <h1>Keyserman Press</h1>
+
+      <p class="subtitle">
+        Books, poetry, readings, and bilingual literary projects by Noel Keyserman.
+      </p>
+
+      <section>
+        <h2>Moments / Моменты</h2>
+        <p>
+          A bilingual collection of poems written in English and Russian.
+        </p>
+
+        <p>
+          Paperback and Kindle editions are available now.
+        </p>
+      </section>
+
+      <section>
+        <h2>Coming Soon</h2>
+        <p>
+          Poetry readings, audio recordings, video clips, and future literary projects.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #f7f4ef;
+    color: #1f1f1f;
+  }
+
+  main {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 80px 24px;
+  }
+
+  h1 {
+    font-size: 56px;
+    margin-bottom: 16px;
+    letter-spacing: 0.03em;
+  }
+
+  .subtitle {
+    font-size: 24px;
+    line-height: 1.4;
+    margin-bottom: 56px;
+  }
+
+  section {
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #d8d0c5;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 12px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>
